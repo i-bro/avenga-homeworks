@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f3f3f3;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+.periodic-table{
+    position: relative;
+}
+
+table.periodic-table {
+    border-collapse: collapse;
+    margin: auto;
+}
+
+.periodic-table td {
+    width: 60px;
+    height: 60px;
+    border: 1px solid #999;
+    text-align: center;
+    font-weight: bold;
+    vertical-align: middle;
+    background: #fff;
+}
+
+td span {
+    display: block;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.alkali { background: #ffb3b3; }
+.alkaline { background: #ffd9b3; }
+.transition { background: #ffffb3; }
+.post { background: #d1ffd1; }
+.metalloid { background: #b3ffe0; }
+.nonmetal { background: #b3e0ff; }
+.halogen { background: #dcb3ff; }
+.noble { background: #ffb3e6; }
+.lanth { background: #eee; }
+.actin { background: #e0e0e0; }
+
+.row {
+    text-align: center;
+    font-size: 22px;
+    margin: 10px 0;
+}
+/* #info-box {
+    width: 250px;
+    padding: 10px;
+    border: 1px solid black;
+    background: #f8f8f8;
+} */
+ #info-box {
+    display: none;
+   position: absolute;
+    top: 50%;          
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    padding: 10px;
+    border: 2px solid black;
+    background: white;
+    z-index: 999;
+ }

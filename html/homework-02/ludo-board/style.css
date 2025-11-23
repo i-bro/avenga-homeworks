@@ -1,6 +1,6 @@
 table {
         /* border-collapse: collapse; */
-        border: 2px;
+        border: 5px solid gray;
         margin: 20px auto;
     }
 
@@ -26,6 +26,9 @@ table {
         margin: auto;
         margin-top: 4px;
         border: 2px solid black;
+         display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .start {
