@@ -1,0 +1,126 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f4f4f4;
+}
+
+header {
+    background: #222;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+section, article {
+    background: white;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #222;
+    color: white;
+    margin-top: 20px;
+}
+
+/* Login Page */
+.login-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+    margin-bottom: 100px;
+}
+
+.login-box {
+    width: 300px;
+    background: white;
+    padding: 50px;
+    border-radius: 8px;
+}
+
+.login-box input {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0 15px;
+}
+
+.login-box button {
+    width: 100%;
+    padding: 10px;
+    background: #222;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin: 8px;
+}
+
+section ul {
+    padding-left: 20px;
+}
+
+section ul li {
+    margin-bottom: 8px;
+}
+
+/* Contact Page */
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.contact-box {
+    width: 350px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.contact-box input,
+.contact-box textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0 15px;
+}
+
+.contact-box button {
+    width: 100%;
+    padding: 10px;
+    background: #222;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.contact-box button:hover,
+.login-box button:hover {
+    background: #444;
+}
+.video-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+video {
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+iframe {
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
