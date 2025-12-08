@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-div{
+    width: 650px;
+    height: 650px;
+}
+.first-left{
+    width: 90%;
+    height: 100%;
+    float: left;
+}
+.first-right{
+    width: 10%;
+    height: 100%;
+    float: right;
+}
+.first-right-top{
+    width: 100%;
+    height: 80%;
+    background-color: beige;
+    border: 5px solid black;
+    border-right: none;
+    border-top: none;
+}
+.first-right-bottom{
+    width: 100%;
+    height: 20%;
+    background-color: red;
+    border: 5px solid black;
+    border-right: none;
+    border-bottom: none;
+}
+.first-left-top{
+    width: 100%;
+    height: 20%;
+}
+.top-inner-one{
+    width: 75%;
+    height: 100%;
+    float: left;
+}
+.top-inner-two{
+    width: 25%;
+    height: 100%;
+    float: right;
+    background-color: #F2C968;
+    border: 5px solid black;
+    border-top: none;
+}
+.top-inner-one-child-1{
+    width: 40%;
+    height: 100%;
+    float: left;
+    background-color: #FBFDE7;
+    border: 5px solid black;
+    border-top: none;
+    border-left: none;
+}
+.top-inner-one-child-2{
+    width: 60%;
+    height: 100%;
+    float: right;
+    background-color: #F2E7D5;
+    border: 5px solid black;
+    border-top: none;
+}
+.first-left-bottom{
+    width: 100%;
+    height: 80%;
+}
+.left-side-small{
+    width: 20%;
+    height: 100%;
+    float: left;
+}
+.left-side-small-top{
+    width: 100%;
+    height: 30%;
+    background-color: #FBFDE7;
+    border: 5px solid black;
+    border-left: none;
+}
+.left-side-small-middle{
+    width: 100%;
+    height: 40%;
+    background-color: #E1EAE5;
+    border: 5px solid black;
+    border-left: none;
+}
+.left-side-small-bottom{
+    width: 100%;
+    height: 30%;
+    background-color:#F4C65A;
+    border: 5px solid black;
+    border-left: none;
+    border-bottom: none;
+}
+.rigth-side-big{
+    width: 80%;
+    height: 100%;
+    float: right;
+}
+.rigth-side-big-top{
+    width: 100%;
+    height: 60%;
+}
+.rigth-side-big-bottom{
+    width: 100%;
+    height: 40%;
+}
+.red-box{
+    width: 68.7%;
+    height: 100%;
+    float: left;
+    background-color: red;
+    border: 5px solid black;
+}
+.right-to-red-box{
+    width: 31.3%;
+    height: 100%;
+    float: right;
+}
+.yellow-to-red-top{
+    width: 100%;
+    height: 50%;
+    background-color: yellow;
+    border: 5px solid black;
+}
+.two-bedge-bottom{
+    width: 100%;
+    height: 50%;
+}
+.bedge-bottom-left{
+    width: 50%;
+    height: 100%;
+    float: left;
+    background-color: #F2EEE2;
+    border: 5px solid black;
+}
+.bedge-bottom-right{
+    width: 50%;
+    height: 100%;
+    float: right;
+    background-color: #F2EEE2;
+    border: 5px solid black;
+}
+.left-side{
+    width: 34.3%;
+    height: 100%;
+    float: left;
+}
+.right-side{
+    width: 65.7%;
+    height: 100%;
+    float: right;
+}
+.left-side-top{
+    width: 100%;
+    height: 60%;
+    background-color: #130409;
+    border: 5px solid black;
+}
+.left-side-bottom{
+    width: 100%;
+    height: 40%;
+    background-color: #FFFFFF;
+    border: 5px solid black;
+    border-bottom: none;
+}
+.right-side-last-top{
+    width: 100%;
+    height: 90%;
+}
+.right-side-last-bottom{
+    width: 100%;
+    height: 10%;
+    background-color: #E0E0DF;
+    border: 5px solid black;
+    border-bottom: none;
+}
+.right-side-last-top-left{
+    width: 52.5%;
+    height: 100%;
+    float: left;
+}
+.right-side-last-top-rigth{
+    width: 47.5%;
+    height: 100%;
+    float: right;
+}
+.white-top{
+    width: 100%;
+    height: 33.5%;
+    background-color: #C0BFBA;
+    border: 5px solid black;
+}
+.white-middle{
+    width: 100%;
+    height: 33.5%;
+    background-color: #C0BFBA;
+    border: 5px solid black;
+}
+.black-bottom{
+    width: 100%;
+    height: 33%;
+    background-color: #0B0205;
+    border: 5px solid black;
+}
+.top-white-l{
+    width: 100%;
+    height: 33.5%;
+    background-color: #D6DEE0;
+    border: 5px solid black;
+}
+.bottom-purple{
+    width: 100%;
+    height: 67%;
+    background-color: #241785;
+    border: 5px solid black;
+}
