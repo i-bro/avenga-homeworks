@@ -13,7 +13,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 40px;
+    padding: 20px 15%;
 }
 nav > a{
     margin: 0px 30px;
@@ -34,7 +34,7 @@ nav > a{
    
 .hero{
     background-color: #f7f7fb;
-    padding: 20px 40px;
+    padding: 20px 15%;
 }
 .hero-container{
     display: flex;
@@ -91,7 +91,7 @@ nav > a{
 }
 
 .benefits {
-    padding: 20px 40px;
+    padding: 20px 15%;
     background-color: #f7f7fb;
 }
 
@@ -134,7 +134,7 @@ nav > a{
 }
 
 .products {
-    padding: 20px 40px;
+    padding: 20px 15%;
     background-color: #f7f7fb;
 }
 
@@ -181,22 +181,22 @@ nav > a{
     color: white;
 }
 .bestseller {
-    background-color: #22c55e;
+    background-color: #ff6b4a;
 }
 .new {
-    background-color: #3b82f6;
+    background-color: #ff6b4a;
 }
 .limited {
-    background-color: #ef4444;
+    background-color: #ff6b4a;
 }
 .classic {
-    background-color: #6b7280;
+    background-color: #ff6b4a;
 }
 
 
 .testimonial {
     background-color: #f3f4f6;
-    padding: 20px 40px;
+    padding: 20px 15%;
     display: flex;
     justify-content: center;
 }
@@ -241,7 +241,7 @@ nav > a{
 
 .footer {
     background-color: #1b1b25;
-    padding: 20px 40px;
+    padding: 20px 15%;
     color: 	#f3f3ff;
 }
 .footer-content {
