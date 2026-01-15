@@ -32,5 +32,6 @@ button.addEventListener("click", function () {
   }
   rowInput.value = "";
   columnInput.value = "";
+  tableContainer.innerHTML = "";
   tableContainer.appendChild(table);
 });
