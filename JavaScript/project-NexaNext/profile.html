@@ -1,43 +1,44 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-  <nav>
-        <a href="./index.html">NexaNext</a>
-        <div>
-            <a href="./login.html" id="logIn">log in</a>
-            <a href="./register.html" id="register">register</a>
-            <button id="logOut">log out</button>
-        </div>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./profile.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="./index.html" class="logo">NexaNext</a>
+      <div class="nav-links" id="navLinks">
+        <a href="./login.html" id="logIn" class="loginBtn">log in</a>
+        <a href="./register.html" id="register" class="registerBtn">register</a>
+        <button id="logOut" class="logOutBtn">log out</button>
+      </div>
+      <button class="hamburger" id="hamburger">☰</button>
     </nav>
     <div id="loader" class="loader hidden">
-        <div class="spinner"></div>
-        <p>Loading...</p>
+      <div class="spinner"></div>
+      <p>Loading...</p>
     </div>
     <div class="profile">
-  <img id="avatar">
-  <h1 id="name"></h1>
-  <p id="email"></p>
-  <p id="job"></p>
-  <p id="birthday"></p>
-  <p id="location"></p>
+      <img id="avatar" />
+      <h1 id="name"></h1>
+      <p id="email"></p>
+      <p id="job"></p>
+      <p id="birthday"></p>
+      <p id="location"></p>
 
-  <h3>Friends</h3>
-  <ul id="friends" class="friends"></ul>
+      <h3 class="title-friends">Friends</h3>
+      <ul id="friends" class="friends"></ul>
 
-  <h3>Posts</h3>
-  <div id="posts"></div>
+      <h3>Posts</h3>
+      <div id="posts"></div>
 
-  <button id="photosBtn">View Photos</button>
-</div>
+      <button id="photosBtn">View Photos</button>
+    </div>
 
-
-<script src="./jscode/profilePage.js" type="module"></script>
-<script src="./jscode/navbar.js" type="module"></script>
-</body>
+    <script src="./jscode/profilePage.js" type="module"></script>
+    <script src="./jscode/navbar.js" type="module"></script>
+  </body>
 </html>

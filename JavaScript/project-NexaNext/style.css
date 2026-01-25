@@ -4,6 +4,81 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 10%;
+  background-color: #F8FAFC;
+}
+.logo{
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 600;
+  color: #0F172A;
+}
+.loginBtn{
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 600;
+  color: #0F172A;
+  margin: 0 16px;
+}
+.registerBtn{
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 600;
+  color: #0F172A;
+  margin: 0 16px;
+}
+.logOutBtn{
+  font-size: 16px;
+  font-weight: 600;
+  padding: 8px 16px;
+  color: #0F172A;
+  border: none;
+  margin: 0 16px;
+}
+
+.usersGrid{
+  padding: 16px 10%;
+  /* display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 24px; */
+  background-color: #F8FAFC;
+  display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 16px;
+      /* padding: 16px; */
+}
+.user{
+  padding: 16px;
+  text-decoration: none;
+  border-radius: 8px;
+  background-color: #FFFFFF;
+  border: 3px solid #E2E8F0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+.user-name{
+  color: #0F172A;
+}
+.user-email{
+  color:#475569;
+}
+
+
+
+img{
+  width: 350px
+}
+
+
+
+
+
+
 .loader {
   position: fixed;
   inset: 0;
@@ -46,4 +121,83 @@
   to {
     transform: rotate(360deg);
   }
+}
+.hamburger {
+  display: none;
+  font-size: 28px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.nav-links {
+  display: flex;
+  gap: 16px;
+}
+
+
+@media(max-width: 768px) {
+  .usersGrid {
+    padding: 16px;
+    gap: 16px;
+  }
+  .user {
+    /* flex: 1 1 calc(50% - 16px); */
+    flex-basis: 45%;
+  }
+  img{
+    width: 100%;
+  }
+}
+
+@media(max-width: 480px) {
+  .usersGrid {
+    padding: 16px;
+    gap: 16px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .user {
+    /* flex: 1 1 calc(50% - 16px); */
+    flex-basis: 80%;
+  }
+  img{
+    width: 100%;
+  }
+
+   .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    /* position: absolute; */
+    top: 72px;
+    right: 16px;
+
+    background: white;
+    box-shadow: 0 10px 25px rgba(0,0,0,.15);
+    border-radius: 12px;
+    padding: 16px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    opacity: 0;
+    transform: translateY(-10px);
+    pointer-events: none;
+    transition: all 0.25s ease;
+  }
+
+  .nav-links.active {
+    display: flex;
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+  .nav-links {
+  border: 2px solid #E2E8F0;
+}
+
 }

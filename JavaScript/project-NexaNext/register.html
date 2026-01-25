@@ -4,24 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="register.css">
 </head>
 <body>
-    <nav>
-        <a href="./index.html">NexaNext</a>
-        <div>
-            <a href="./login.html" id="logIn">log in</a>
-            <a href="./register.html" id="register">register</a>
-            <button id="logOut">log out</button>
-        </div>
+    <nav class="navbar">
+      <a href="./index.html" class="logo">NexaNext</a>
+      <!-- <button class="hamburger" id="hamburger">☰</button> -->
+      <div class="nav-links" id="navLinks">
+        <a href="./login.html" id="logIn" class="loginBtn">log in</a>
+        <a href="./register.html" id="register" class="registerBtn">register</a>
+        <button id="logOut" class="logOutBtn">log out</button>
+      </div>
+      <button class="hamburger" id="hamburger">☰</button>
     </nav>
-    <h2>Register</h2>
+    <section class="register-section">
+        <h2 class="register-title">Register</h2>
 
-    <input id="name" placeholder="Name">
-    <input id="email" placeholder="Email">
-    <input id="password" type="password" placeholder="Password">
-    <button id="registerUser">Register</button>
+    <input id="name" placeholder="Name" class="name-input">
+    <input id="email" placeholder="Email" class="email-input">
+    <input id="password" type="password" placeholder="Password" class="password-input">
+    <button id="registerUser" class="registerbutton">Register</button>
 
     <p id="msg"></p>
+    </section>
 
 
  <script src="./jscode/registerPage.js" type="module"></script>

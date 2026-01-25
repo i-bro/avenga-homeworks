@@ -1,4 +1,8 @@
 import { fetchImages, fetchApiUsers, fetchLocalUsers } from "./api.js";
+const backBtn = document.querySelector(".backBtn");
+backBtn.addEventListener("click", () => {
+  window.history.back();
+});
 
 const userId = new URLSearchParams(window.location.search).get("id");
 
@@ -45,6 +49,7 @@ function renderGallery(images) {
 
   images.forEach(img => {
     const image = document.createElement("img");
+    image.className = "galleryImg";
     image.src = img.url;
     image.alt = img.title;
 

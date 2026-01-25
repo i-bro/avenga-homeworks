@@ -1,0 +1,114 @@
+.profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 16px;
+  padding: 16px 10%;
+  background-color: #ffffff;
+}
+#avatar {
+  width: 75%;
+  border-radius: 8px;
+}
+#name {
+  font-size: 24px;
+  font-weight: 600;
+  color: #0f172a;
+}
+#email {
+  font-size: 16px;
+  font-weight: 400;
+  color: #475569;
+}
+#job {
+  font-size: 16px;
+  font-weight: 400;
+  color: #475569;
+}
+#birthday {
+  font-size: 16px;
+  font-weight: 400;
+  color: #475569;
+}
+#location {
+  font-size: 16px;
+  font-weight: 400;
+  color: #475569;
+}
+.title-friends {
+  font-size: 20px;
+  font-weight: 600;
+  color: #0f172a;
+  margin-top: 24px;
+}
+.friends {
+  list-style: none;
+}
+.friends li {
+  font-size: 16px;
+  font-weight: 400;
+  color: #475569;
+  margin-bottom: 8px;
+}
+#posts {
+  /* margin-top: 24px;
+    width: 100%; */
+}
+.post {
+  font-size: 16px;
+  font-weight: 400;
+  color: #475569;
+  margin-bottom: 8px;
+}
+#photosBtn {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: #0f172a;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  background-color: FFFFFF;
+  border-radius: 8px;
+  padding: 8px;
+}
+
+
+
+
+
+@media(max-width: 480px){
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    /* position: absolute; */
+    top: 72px;
+    right: 16px;
+
+    background: white;
+    box-shadow: 0 10px 25px rgba(0,0,0,.15);
+    border-radius: 12px;
+    padding: 16px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    opacity: 0;
+    transform: translateY(-10px);
+    pointer-events: none;
+    transition: all 0.25s ease;
+  }
+
+  .nav-links.active {
+    display: flex;
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+  .nav-links {
+  border: 2px solid #E2E8F0;
+}
+}

@@ -9,9 +9,9 @@ export function renderUsers(users, containerId) {
     a.className = "user";
     a.href = `./profile.html?id=${user.id}`;
     a.innerHTML = `
-      <img src="${user.image}">
-      <h3>${user.name}</h3>
-      <p>${user.email}</p>
+      <img src="${user.image}" class="user-image">
+      <h3 class="user-name">${user.name}</h3>
+      <p class="user-email">${user.email}</p>
     `;
     container.appendChild(a);
   });

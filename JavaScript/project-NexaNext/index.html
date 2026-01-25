@@ -1,33 +1,35 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="./style.css">
-</head>
-<body>
-    <nav>
-        <a href="./index.html">NexaNext</a>
-        <div>
-            <a href="./login.html" id="logIn">log in</a>
-            <a href="./register.html" id="register">register</a>
-            <button id="logOut">log out</button>
-        </div>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="./index.html" class="logo">NexaNext</a>
+      <div class="nav-links" id="navLinks">
+        <a href="./login.html" id="logIn" class="loginBtn">log in</a>
+        <a href="./register.html" id="register" class="registerBtn">register</a>
+        <button id="logOut" class="logOutBtn">log out</button>
+      </div>
+      <button class="hamburger" id="hamburger">☰</button>
     </nav>
     <div id="loader" class="loader hidden">
-        <div class="spinner"></div>
-        <p>Loading...</p>
+      <div class="spinner"></div>
+      <p>Loading...</p>
     </div>
 
-    <section id="usersList">
+    <section id="usersList" class="usersGrid"></section>
 
-    </section>
-    
     <script src="./jscode/index.js" type="module"></script>
     <script src="./jscode/navbar.js" type="module"></script>
-</body>
+  </body>
 </html>

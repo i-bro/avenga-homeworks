@@ -1,21 +1,33 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <h2>Login</h2>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./login.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="./index.html" class="logo">NexaNext</a>
+      <div class="nav-links" id="navLinks">
+        <a href="./login.html" id="logIn" class="loginBtn">log in</a>
+        <a href="./register.html" id="register" class="registerBtn">register</a>
+        <button id="logOut" class="logOutBtn">log out</button>
+      </div>
+      <button class="hamburger" id="hamburger">☰</button>
+    </nav>
+    <section class="login-section">
+      <h2 class="loginTitle">Login</h2>
 
-<input id="email" placeholder="Email">
-<input id="password" type="password">
-<button id="logIn">Login</button>
+      <input id="email" placeholder="Email" class="email" />
+      <input id="password" type="password" class="password" placeholder="Password"/>
+      <button id="logIn" class="login">Login</button>
 
-<p id="msg"></p>
+      <p id="msg"></p>
+    </section>
 
-
-<script src="./jscode/logInPage.js" type="module"></script>
-<script src="./jscode/navbar.js" type="module"></script>
-</body>
+    <script src="./jscode/logInPage.js" type="module"></script>
+    <script src="./jscode/navbar.js" type="module"></script>
+  </body>
 </html>
