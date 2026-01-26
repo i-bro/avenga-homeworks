@@ -11,4 +11,15 @@ export function toggleTheme() {
 
   document.documentElement.setAttribute("data-theme", next);
   localStorage.setItem(THEME_KEY, next);
+  updateIcon();
 }
+
+function updateIcon() {
+  const btn = document.getElementById("themeToggle");
+  if (!btn) return;
+  btn.textContent =
+    document.documentElement.getAttribute("data-theme") === "dark"
+      ? "☀️"
+      : "🌙";
+}
+

@@ -76,6 +76,7 @@ body {
   border-color: var(--border) !important;
 }
 
+
 p, h1, h2, h3, h4, span, a {
   color: var(--text) !important;
 }
@@ -293,6 +294,9 @@ img{
   }
   .nav-links {
   border: 2px solid #E2E8F0;
+}
+.nav-links a{
+  color: #0F172A!important;
 }
 
 }
