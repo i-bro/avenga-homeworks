@@ -25,6 +25,31 @@ async function init() {
   renderUsers([...normalizedApi, ...normalizedLocal], "usersList");
 }
 
+// const toggleBtn = document.getElementById("themeToggle");
+// const root = document.documentElement;
+
+// // Load saved theme
+// const savedTheme = localStorage.getItem("theme");
+// if (savedTheme) {
+//   root.setAttribute("data-theme", savedTheme);
+//   toggleBtn.textContent = savedTheme === "dark" ? "☀️" : "🌙";
+// }
+
+// toggleBtn?.addEventListener("click", () => {
+//   const isDark = root.getAttribute("data-theme") === "dark";
+
+//   if (isDark) {
+//     root.removeAttribute("data-theme");
+//     localStorage.setItem("theme", "light");
+//     toggleBtn.textContent = "🌙";
+//   } else {
+//     root.setAttribute("data-theme", "dark");
+//     localStorage.setItem("theme", "dark");
+//     toggleBtn.textContent = "☀️";
+//   }
+// });
+
+
 
 initNavbar();
 init();

@@ -1,5 +1,6 @@
 // navbar.js
 import { getCurrentUser, logout } from "./auth.js";
+import { toggleTheme, initTheme } from "./theme.js";
 
 export function initNavbar() {
   const loginLink = document.getElementById("logIn");
@@ -37,7 +38,41 @@ hamburger.onclick = () => {
     hamburger.textContent === "☰" ? "✕" : "☰";
 };
 
+const toggleBtn = document.getElementById("themeToggle");
+const root = document.documentElement;
 
+// Load saved theme
+// const savedTheme = localStorage.getItem("theme");
+// if (savedTheme) {
+//   root.setAttribute("data-theme", savedTheme);
+//   toggleBtn.textContent = savedTheme === "dark" ? "☀️" : "🌙";
+// }
+
+// toggleBtn?.addEventListener("click", () => {
+//   const isDark = root.getAttribute("data-theme") === "dark";
+
+//   if (isDark) {
+//     root.removeAttribute("data-theme");
+//     localStorage.setItem("theme", "light");
+//     toggleBtn.textContent = "🌙";
+//   } else {
+//     root.setAttribute("data-theme", "dark");
+//     localStorage.setItem("theme", "dark");
+//     toggleBtn.textContent = "☀️";
+//   }
+// });
+
+
+
+
+const themeBtn = document.getElementById("themeToggle");
+
+if (themeBtn) {
+  themeBtn.onclick = toggleTheme;
 }
 
+
+
+}
+initTheme();
 initNavbar();

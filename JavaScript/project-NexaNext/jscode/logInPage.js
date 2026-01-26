@@ -2,7 +2,7 @@ import { login } from "./auth.js";
 
 const emailInput = document.getElementById("email");
 const passwordInput = document.getElementById("password");
-const loginBtn = document.getElementById("logIn");
+const loginBtn = document.getElementById("logInBtn");
 const msg = document.getElementById("msg");
 const logOutBtn = document.getElementById("logOut");
 
