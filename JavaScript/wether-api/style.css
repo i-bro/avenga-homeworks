@@ -1,0 +1,5 @@
+#cardsContainer{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100vw;
+}
